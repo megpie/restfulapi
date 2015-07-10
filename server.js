@@ -11,7 +11,7 @@ var bodyParser = require('body-parser');
 var Bear       = require('./app/models/bear');
 
 var mongoose   = require('mongoose');
-mongoose.connect('process.env.MONGOLAB_URI');
+mongoose.connect(process.env.MONGOLAB_URI);
 //mongoose.connect('mongodb://localhost/restfulapi');
 // configure app to use bodyParser()
 // this will let us get the data from a POST
